@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pike: MonoBehaviour
 {
+    private FishScriptableObject _pikeDetails;
+
     public int weightPike;
     public int maxAgePike;
     public int currentAgePike;

@@ -10,10 +10,7 @@ class Diet
     float rangeByWeight;
     float countOfFeedByWeight;
 
-    public typesOfDiet type() 
-    {
-        return typeOfDiet;
-    }
+    public typesOfDiet type() => typeOfDiet;
 
     public float range() 
     {
