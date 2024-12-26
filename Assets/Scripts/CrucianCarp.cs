@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CrucianCarp : MonoBehaviour
 {
+    public int countOfCurcianCarp;
     public int weight;
     public int maxAge;
     public int currentAge;

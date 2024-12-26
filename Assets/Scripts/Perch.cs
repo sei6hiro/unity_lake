@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Perch : MonoBehaviour
 {
+    public int countOfPerch;
     public int weightPerch;
     public int maxAgePerch;
     public int currentAgePerch;
