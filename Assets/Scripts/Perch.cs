@@ -14,6 +14,11 @@ public class Perch : MonoBehaviour
     public float rangeByWeight;
     public float countOfFeedByWeight;
     Diet diet;
+    [SerializeField] private GameObject prefab;
+    Perch(string fishType)
+    {
+        Instantiate(prefab, Random.insideUnitCircle, Quaternion.identity);
+    }
 
     private void Awake()
     {
@@ -22,5 +27,8 @@ public class Perch : MonoBehaviour
         rangeByWeight = diet.range();
         countOfFeedByWeight = diet.count();
     }
+
+    
 }
+
 

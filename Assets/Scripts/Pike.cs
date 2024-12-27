@@ -16,6 +16,11 @@ public class Pike: MonoBehaviour
     public float rangeByWeight;
     public float countOfFeedByWeight;
     Diet diet;
+    [SerializeField] private GameObject prefab;
+    Pike() 
+    {
+        Instantiate(prefab, Random.insideUnitCircle, Quaternion.identity);
+    }
 
     private void Awake()
     {

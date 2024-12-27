@@ -6,5 +6,4 @@ using UnityEngine;
 public class StartGame : MonoBehaviour
 {
     public List<TMP_InputField> fishCountParam;
-
 }

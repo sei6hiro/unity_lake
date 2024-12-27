@@ -19,15 +19,4 @@ public class FishScriptableObject : MonoBehaviour
         Debug.Log(thePerch.countOfPerch);
     }
 
-    public void modifyValue(string fishType, int value)
-    {
-        switch (fishType)
-        {
-            case "Pike":
-                thePike.countOfPike = 50;
-                break;
-            case "Perch":
-                break;
-        }
-    }
 }

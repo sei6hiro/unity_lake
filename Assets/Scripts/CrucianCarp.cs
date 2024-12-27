@@ -15,6 +15,11 @@ public class CrucianCarp : MonoBehaviour
     public float countOfFeedByWeight;
 
     Diet diet;
+    [SerializeField] private GameObject prefab;
+    CrucianCarp()
+    {
+        Instantiate(prefab, Random.insideUnitCircle, Quaternion.identity);
+    }
 
     private void Awake()
     {
@@ -23,6 +28,5 @@ public class CrucianCarp : MonoBehaviour
         rangeByWeight = diet.range();
         countOfFeedByWeight = diet.count();
     }
-
-
 }
+
